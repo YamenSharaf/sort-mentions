@@ -46,7 +46,7 @@ const handleOutput = async (processedNames: string) => {
 
 const validateInput = async (selectedText: string, handle: string): Promise<boolean> => {
   if (!selectedText.trim()) {
-    await showToast(Toast.Style.Failure, `No content`);
+    await showToast(Toast.Style.Failure, `No text selected`);
     return false;
   }
   if (!selectedText.includes(handle)) {
